@@ -2,8 +2,9 @@ NOTE: this project was created using a raspi, meaning file paths and other Debia
       might also need to change FTP credentials(Mqtt-camera-trigger.py), as the file paths for all of those specs will be different for 
       every computer. 
 
-
+Please feel free to add any libs that I might have missed, as this is a freeze of my python env's current lib.
 Py-env libs:
+mosquitto == 2.0.11
 bidict==0.22.1
 blinker==1.6.2
 certifi==2023.5.7
