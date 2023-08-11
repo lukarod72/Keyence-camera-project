@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Updated styles for vertical columns with photos side by side */
+.vertical-container {
+    display: flex;
+    flex-direction: row; /* Set the direction to horizontal */
+    justify-content: space-around; /* Add space between photo containers */
+    align-items: flex-start;
+    margin-top: 20px; /* Add space between the header and photo containers */
+}
+
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    width: 350px; /* Adjust the width to make photos larger */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add space between photo cards */
+}
+
+.photo-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.photo-card p {
+    margin-top: 10px;
+}
+
+/* Button styling */
+.back-home-button {
+    display: block;
+    margin: 30px auto; /* Center the button */
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center; /* Center the text */
+    transition: background-color 0.3s ease;
+}
+.back-home-button:hover {
+    background-color: #45a049;
+}

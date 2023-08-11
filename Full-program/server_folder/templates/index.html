@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Gallery</title>
+    
+    <link rel="stylesheet" type="text/css" href="../static/css/index_styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main-content">
+            <h1>Latest Photos</h1>
+            <a href="{{ url_for('history') }}" class="photos-button">View All Photos</a>
+            <div class="photo-container">
+                <div class="photo-card">
+                    <img src="{{ url_for('get_photo', folder='Program_0', filename=photo_0) }}" alt="{{ photo_0 }}">
+                    <p>{{ photo_0 }}</p>
+                </div>
+                <div class="photo-card">
+                    <img src="{{ url_for('get_photo', folder='Program_1', filename=photo_1) }}" alt="{{ photo_1 }}">
+                    <p>{{ photo_1 }}</p>
+                </div>
+            </div>
+
+            <script src="/static/js/reload_photos.js"></script>
+        </div>
+        <footer>
+            <!-- Footer content goes here -->
+            <p>External MQTT Trigger: host=summerpi     user=summer1    pass=PLALUKA5000    publish: "Trigger"</p>
+            <p>&copy; 2023 Magna, Plastcoat. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

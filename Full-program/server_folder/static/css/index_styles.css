@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.photo-card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    width: 600px; /* Adjust the width as desired */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.photo-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.photo-card p {
+    margin-top: 10px;
+}
+
+/* Button styling */
+.photos-button {
+    display: block;
+    margin: 30px auto; /* Center the button */
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center; /* Center the text */
+    transition: background-color 0.3s ease;
+}
+
+.photos-button:hover {
+    background-color: #45a049;
+}
+
+html, body {
+    height: 100%; /* Ensure the HTML and body elements fill the entire viewport */
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    flex: 1; /* Fill the remaining space between header and footer */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the wrapper takes up at least the full viewport height */
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}

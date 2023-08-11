@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Photos</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/history_styles.css">
+</head>
+<body>
+    <h1>All Photos</h1>
+    <a href="{{ url_for('index') }}" class="back-home-button">Back Home</a>
+
+    <div class="vertical-container">
+        <div class="photo-container">
+            <h2>Program 0: Photos</h2>
+            {% for photo, timestamp in photos_0 %}
+            <div class="photo-card">
+                <img src="{{ url_for('get_photo', folder='Program_0', filename=photo) }}" alt="{{ photo }}">
+                <p>{{ photo }}</p>  <!-- Display the timestamp -->
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="photo-container">
+            <h2>Program 1: Photos</h2>
+            {% for photo, timestamp in photos_1 %}
+            <div class="photo-card">
+                <img src="{{ url_for('get_photo', folder='Program_1', filename=photo) }}" alt="{{ photo }}">
+                <p>{{ photo }}</p>  <!-- Display the timestamp -->
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</body>
+</html>
