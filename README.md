@@ -3,6 +3,14 @@ This project includes solving a problem regarding the Keyence IV2 AI camera. It 
 send triggers and connect a network of different cameras, lighting devices and LED-displays. After photos from the camera are taken, their
 information is presented on a local server, and refreshed using AJAX requests. 
 
+These are the following devices used:
+Raspberry Pi 4 - Debian (Runs the server and software)
+Keyence IV2 Camera Sensor  - (Takes and analizes the photos)
+Marquee Eazy LED disaply - (displays part status [OK/NOT GOOD])
+24V power supply for Camera and display
+Ethernet Port Hub - DLINK
+
+
 
 This is what the website looks like:
 MAIN PAGE (shows the most recent trigger):
