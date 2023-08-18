@@ -4,10 +4,10 @@ send triggers and connect a network of different cameras, lighting devices and L
 information is presented on a local server, and refreshed using AJAX requests. 
 
 These are the following devices used:
-Raspberry Pi 4 - Debian (Runs the server and software)
-Keyence IV2 Camera Sensor  - (Takes and analizes the photos)
-Marquee Eazy LED disaply - (displays part status [OK/NOT GOOD])
-24V power supply for Camera and display
+Raspberry Pi 4 - Debian (Runs the server and software),
+Keyence IV2 Camera Sensor  - (Takes and analizes the photos),
+Marquee Eazy LED disaply - (displays part status [OK/NOT GOOD]),
+24V power supply for Camera and display,
 Ethernet Port Hub - DLINK
 
 
